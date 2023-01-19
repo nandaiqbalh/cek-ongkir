@@ -1,7 +1,8 @@
-package com.nandaiqbalh.cekongkir
+package com.nandaiqbalh.cekongkir.presentation.ui.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.nandaiqbalh.cekongkir.R
 
 class MainActivity : AppCompatActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {

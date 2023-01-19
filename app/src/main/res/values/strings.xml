@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">CekOngkir</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ob_two_desc">You can search location by\ncity or province</string>
+    <string name="ob_two_title">Various Locations</string>
+    <string name="ob_one_title">Ready?</string>
+    <string name="ob_one_desc">Get to know us!</string>
+    <string name="ob_three_title">Various Couriers</string>
+    <string name="ob_three_desc">You can search shipping cost\nby various couriers</string>
+    <string name="delete">Delete</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="btn_get_started">Get Started</string>
+
 </resources>

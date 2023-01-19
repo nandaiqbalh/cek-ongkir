@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.nandaiqbalh.cekongkir.presentation.ui.onboarding.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_onboardingOneFragment"
+            app:destination="@id/onboardingOneFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_left"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingOneFragment"
+        android:name="com.nandaiqbalh.cekongkir.presentation.ui.onboarding.fragment.OnboardingOneFragment"
+        android:label="fragment_onboarding_one"
+        tools:layout="@layout/fragment_onboarding_one" >
+        <action
+            android:id="@+id/action_onboardingOneFragment_to_onboardingTwoFragment"
+            app:destination="@id/onboardingTwoFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingTwoFragment"
+        android:name="com.nandaiqbalh.cekongkir.presentation.ui.onboarding.fragment.OnboardingTwoFragment"
+        android:label="fragment_onboarding_two"
+        tools:layout="@layout/fragment_onboarding_two" >
+        <action
+            android:id="@+id/action_onboardingTwoFragment_to_onboardingThreeFragment"
+            app:destination="@id/onboardingThreeFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_left"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboardingThreeFragment"
+        android:name="com.nandaiqbalh.cekongkir.presentation.ui.onboarding.fragment.OnboardingThreeFragment"
+        android:label="fragment_onboarding_three"
+        tools:layout="@layout/fragment_onboarding_three" >
+        <action
+            android:id="@+id/action_onboardingThreeFragment_to_onboardingTwoFragment"
+            app:destination="@id/onboardingTwoFragment" />
+    </fragment>
+
+</navigation>
