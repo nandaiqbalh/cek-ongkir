@@ -10,7 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.nandaiqbalh.cekongkir.databinding.FragmentOnboardingThreeBinding
-import com.nandaiqbalh.cekongkir.presentation.ui.home.MainActivity
+import com.nandaiqbalh.cekongkir.presentation.ui.home.HomeActivity
 import com.nandaiqbalh.cekongkir.presentation.ui.onboarding.OnboardingViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -35,7 +35,7 @@ class OnboardingThreeFragment : Fragment() {
 
 	private fun onClickListener(){
 		binding.btnNext.setOnClickListener {
-			startActivity(Intent(requireContext(), MainActivity::class.java))
+			startActivity(Intent(requireContext(), HomeActivity::class.java))
 			activity?.overridePendingTransition(fade_in, fade_out);
 			activity?.finish()
 

@@ -10,7 +10,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.nandaiqbalh.cekongkir.R
 import com.nandaiqbalh.cekongkir.databinding.FragmentOnboardingOneBinding
-import com.nandaiqbalh.cekongkir.presentation.ui.home.MainActivity
+import com.nandaiqbalh.cekongkir.presentation.ui.home.HomeActivity
 import com.nandaiqbalh.cekongkir.presentation.ui.onboarding.OnboardingViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -39,7 +39,7 @@ class OnboardingOneFragment : Fragment() {
 		}
 
 		binding.btnSkip.setOnClickListener {
-			startActivity(Intent(requireContext(), MainActivity::class.java))
+			startActivity(Intent(requireContext(), HomeActivity::class.java))
 			activity?.finish()
 			activity?.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 

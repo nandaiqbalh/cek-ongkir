@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cityFragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_selector_city"
+        android:title="@string/city_name"/>
+    <item
+        android:id="@+id/provinceFragment"
+        android:enabled="true"
+        android:icon="@drawable/icon_selector_province"
+        android:title="@string/province_name"/>
+</menu>
